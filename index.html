@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leonie – Tages-Quiz</title>
+    <meta name="theme-color" content="#04070f" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="bgParticles" aria-hidden="true"></canvas>
+    <main class="app" id="app">
+      <section class="card" id="screen">
+        <header class="card__header">
+          <div class="progress" aria-hidden="true">
+            <div class="progress__bar" id="progressBar"></div>
+          </div>
+          <div class="meta">
+            <div class="meta__title" id="metaTitle">Quiz</div>
+            <div class="meta__sub" id="metaSub"></div>
+          </div>
+        </header>
+
+        <div class="card__body" id="content"></div>
+
+        <footer class="card__footer">
+          <button class="btn btn--ghost" id="backBtn" type="button">Zurück</button>
+          <div class="spacer"></div>
+          <button class="btn" id="nextBtn" type="button">Weiter</button>
+        </footer>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
